@@ -71,14 +71,13 @@ export default function Icon(props: Props) {
     } = styleTypeToObject(style ?? {});
     const calculatedColor = color ?? styleColor ?? DEFAULT_COLOR;
     const calculatedSize = size ?? styleSize ?? DEFAULT_SIZE;
-
     return (
         <Container
             className = { `jitsi-icon ${className}` }
             onClick = { onClick }
             style = { restStyle }>
             <IconComponent
-                fill = { calculatedColor }
+                fill = { calculatedColor}
                 height = { calculatedSize }
                 id = { id }
                 width = { calculatedSize } />
